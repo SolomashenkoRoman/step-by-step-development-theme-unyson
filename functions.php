@@ -15,6 +15,8 @@ if ( ! function_exists( 'step_by_step_development_theme_unyson_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
+
+define("MY_THEME_TEXTDOMAIN", 'step-by-step-development-theme-unyson');
 function step_by_step_development_theme_unyson_setup() {
 	/*
 	 * Make theme available for translation.
@@ -22,7 +24,7 @@ function step_by_step_development_theme_unyson_setup() {
 	 * If you're building a theme based on Step by step development theme unyson, use a find and replace
 	 * to change 'step-by-step-development-theme-unyson' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'step-by-step-development-theme-unyson', get_template_directory() . '/languages' );
+	load_theme_textdomain( MY_THEME_TEXTDOMAIN, get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
