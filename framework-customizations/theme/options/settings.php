@@ -6,6 +6,9 @@
  * Time: 12:19 AM
  */
 
+if ( ! defined('FW') ){
+    die('Forbidden');
+}
 
 $options = array(
     'option_id' => array(
