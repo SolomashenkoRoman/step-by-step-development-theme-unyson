@@ -131,6 +131,7 @@ function _action_theme_wp_print_styles() {
         . '}'
         . '</style>';
 }
+
 add_action('wp_print_styles', '_action_theme_wp_print_styles');
 
 
