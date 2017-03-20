@@ -119,6 +119,21 @@ function step_by_step_development_theme_unyson_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'step_by_step_development_theme_unyson_scripts' );
 
+
+function _action_theme_wp_print_styles() {
+    if (!defined('FW')) return; // prevent fatal error when the framework is not active
+
+    $option_value = fw_get_db_customizer_option('body-color');
+
+    echo '<style type="text/css">'
+        . 'body { '
+        . 'border: 30px solid '. esc_html($option_value) .'; '
+        . '}'
+        . '</style>';
+}
+add_action('wp_print_styles', '_action_theme_wp_print_styles');
+
+
 /**
  * Implement the Custom Header feature.
  */
