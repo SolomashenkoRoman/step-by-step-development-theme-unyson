@@ -124,6 +124,17 @@ function _action_theme_wp_print_styles() {
     if (!defined('FW')) return; // prevent fatal error when the framework is not active
 
     $option_value = fw_get_db_customizer_option('body-color');
+    //$option_value = fw_get_db_settings_option('body-color');
+    /*
+     * global $post;
+
+    if (!$post || $post->post_type != 'post') {
+        return;
+    }
+
+    $option_value = fw_get_db_post_option($post->ID, 'body-color');
+
+     */
 
     echo '<style type="text/css">'
         . 'body { '

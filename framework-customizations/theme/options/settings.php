@@ -21,5 +21,10 @@ $options = array(
             'data-foo' => 'bar'
         ),
         'help'  => __('Some html that will appear in tip popup', MY_THEME_TEXTDOMAIN),
-    )
+    ),
+    'body-color' => array(
+        'type' => 'color-picker',
+        'label' => __('Body Color', MY_THEME_TEXTDOMAIN),
+        'value' => '#ADFF2F',
+    ),
 );
