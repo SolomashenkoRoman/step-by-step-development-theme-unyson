@@ -16,4 +16,18 @@ $options = array(
         'label' => __('Body Color', MY_THEME_TEXTDOMAIN),
         'value' => '#ADFF2F',
     ),
+    'section_1' => array(
+        'title' => __('Unyson Section', MY_THEME_TEXTDOMAIN),
+        'options' => array(
+
+            'option_1' => array(
+                'type' => 'text',
+                'value' => 'Default Value',
+                'label' => __('Unyson Option', MY_THEME_TEXTDOMAIN),
+                'desc' => __('Option Description', MY_THEME_TEXTDOMAIN),
+            ),
+
+        ),
+    ),
+
 );
