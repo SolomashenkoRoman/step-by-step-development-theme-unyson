@@ -25,6 +25,10 @@ $options = array(
                 'value' => 'Default Value',
                 'label' => __('Unyson Option', MY_THEME_TEXTDOMAIN),
                 'desc' => __('Option Description', MY_THEME_TEXTDOMAIN),
+                'wp-customizer-args' => array(
+                    'priority' => 3,
+                ),
+
             ),
 
         ),
