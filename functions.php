@@ -175,3 +175,8 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load TGM Plugin Activation.
  */
 require get_template_directory() . '/tgm-plugin-activation/step-by-step-tgm-plugin-activation.php';
+
+/**
+ * Load hooks.
+ */
+require get_template_directory() . '/inc/hooks.php';
