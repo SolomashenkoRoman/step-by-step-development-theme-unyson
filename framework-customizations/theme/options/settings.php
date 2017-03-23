@@ -206,4 +206,21 @@ $options = array(
          */
         'limit' => 100,
     ),
+    'option_switch' => array(
+        'type'  => 'switch',
+        'value' => 'hello',
+        'attr'  => array( 'class' => 'custom-class', 'data-foo' => 'bar' ),
+        'label' => __('Label', '{domain}'),
+        'desc'  => __('Description', '{domain}'),
+        'help'  => __('Help tip', '{domain}'),
+        'left-choice' => array(
+            'value' => 'goodbye',
+            'label' => __('Goodbye', '{domain}'),
+        ),
+        'right-choice' => array(
+            'value' => 'hello',
+            'label' => __('Hello', '{domain}'),
+        ),
+
+    ),
 );
