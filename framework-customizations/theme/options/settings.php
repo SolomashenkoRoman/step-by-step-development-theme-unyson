@@ -254,4 +254,41 @@ $options = array(
         'desc'  => __('Description', '{domain}'),
         'help'  => __('Help tip', '{domain}'),
     ),
+    'option_image_picker' => array(
+        'type'  => 'image-picker',
+        'value' => 'value-3',
+        'attr'  => array(
+            'class'    => 'custom-class',
+            'data-foo' => 'bar',
+        ),
+        'label' => __('Label', '{domain}'),
+        'desc'  => __('Description', '{domain}'),
+        'help'  => __('Help tip', '{domain}'),
+        'choices' => array(
+            'value-1' => get_template_directory_uri() .'/images/thumbnail.png',
+            'value-2' => array(
+                // (required) url for thumbnail
+                'small' => get_template_directory_uri() .'/images/thumbnail.png',
+                // (optional) url  для большого изображения, которое появится в подсказке
+                'large' => get_template_directory_uri() .'/images/preview.png',
+                // (optional) Выбор дополнительных данных для js, доступных в пользовательских событиях
+                'data' => array()
+            ),
+            'value-3' => array(
+                // (required) url for thumbnail
+                'small' => array(
+                    'src' => get_template_directory_uri() .'/images/thumbnail.png',
+                    'height' => 70
+                ),
+                // (optional) url for large image that will appear in tooltip
+                'large' => array(
+                    'src' => get_template_directory_uri() .'/images/preview.png',
+                    'height' => 400
+                ),
+                // (optional) choice extra data for js, available in custom events
+                'data' => array()
+                ),
+            ),
+        'blank' => true, // (optional) Если true, изображения могут быть отменены
+    ),
 );
