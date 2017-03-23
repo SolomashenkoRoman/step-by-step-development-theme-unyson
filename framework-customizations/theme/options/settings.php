@@ -133,5 +133,28 @@ $options = array(
          */
         'no-validate' => false,
     ),
+    'option_select_multiple' => array(
+        'type'  => 'select-multiple',
+        'value' => array( 'choice-1', 'choice-3' ),
+        'attr'  => array( 'class' => 'custom-class', 'data-foo' => 'bar' ),
+        'label' => __('Label', MY_THEME_TEXTDOMAIN),
+        'desc'  => __('Description', MY_THEME_TEXTDOMAIN),
+        'help'  => __('Help tip', MY_THEME_TEXTDOMAIN),
+        'choices' => array(
+            '' => '---',
+            'choice-1' => __('Choice 1', MY_THEME_TEXTDOMAIN),
+            'choice-2' => array(
+                'text' => __('Choice 2', MY_THEME_TEXTDOMAIN),
+                'attr' => array('data-foo' => 'bar'),
+            ),
+            array( // optgroup
+                'attr'    => array('label' => __('Group 1', MY_THEME_TEXTDOMAIN)),
+                'choices' => array(
+                    'choice-3' => __('Choice 3', MY_THEME_TEXTDOMAIN),
+                    // ...
+                ),
+            ),
+        ),
+    ),
 
 );
