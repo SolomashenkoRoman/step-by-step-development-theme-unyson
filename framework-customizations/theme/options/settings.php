@@ -597,4 +597,29 @@ $options = array(
         'add-button-text' => __('Add', '{domain}'),
         'sortable' => true,
     ),
+    'option_addable_box' => array(
+        'type'  => 'addable-box',
+        'value' => array(
+            array(
+                'option_box_1' => 'value 1',
+                'option_box_2' => 'value 2',
+            ),
+            // ...
+        ),
+        'attr'  => array( 'class' => 'custom-class', 'data-foo' => 'bar' ),
+        'label' => __('Label', '{domain}'),
+        'desc'  => __('Description', '{domain}'),
+        'help'  => __('Help tip', '{domain}'),
+        'box-options' => array(
+            'option_box_1' => array( 'type' => 'text' ),
+            'option_box_2' => array( 'type' => 'textarea' ),
+        ),
+        'template' => 'Hello {{- option_box_1 }}', // box title
+        'box-controls' => array( // buttons next to (x) remove box button
+            'control-id' => '<small class="dashicons dashicons-smiley"></small>',
+        ),
+        'limit' => 0, // limit the number of boxes that can be added
+        'add-button-text' => __('Add', '{domain}'),
+        'sortable' => true,
+    ),
 );
