@@ -332,4 +332,20 @@ $options = array(
         'min-date' => date('d-m-Y'), // По умолчанию минимальной датой будет текущий день. Установите дату в формате d-m-Y в качестве даты начала
         'max-date' => null, // По умолчанию максимальная дата не указана. Установите дату в формате d-m-Y в качестве даты начала
     ),
+    'option_datetime_picker' => array(
+        'type'  => 'datetime-picker',
+        'value' => '',
+        'attr'  => array( 'class' => 'custom-class', 'data-foo' => 'bar' ),
+        'label' => __('Label', '{domain}'),
+        'desc'  => __('Description', '{domain}'),
+        'help'  => __('Help tip', '{domain}'),
+        'datetime-picker' => array(
+            'format'        => 'Y/m/d H:i', // Формат даты и времени
+            'maxDate'       => false,  // По умолчанию defautFormat datetimelt нет максимальной даты, установите дату в формате даты и времени..
+            'minDate'       => false,  // По умолчанию минимальная дата будет текущим днем, установите дату в формате даты и времени.
+            'timepicker'    => true,   // Show timepicker.
+            'datepicker'    => true,   // Show datepicker.
+            'defaultTime'   => '12:00' // Если входное значение пустое, timepicker установит время использования defaultTime.
+        ),
+    ),
 );
