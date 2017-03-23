@@ -321,4 +321,15 @@ $options = array(
             )
         )
     ),
+    'option_date_picker' => array(
+        'type'  => 'date-picker',
+        'value' => '',
+        'attr'  => array( 'class' => 'custom-class', 'data-foo' => 'bar' ),
+        'label' => __('Label', '{domain}'),
+        'desc'  => __('Description', '{domain}'),
+        'help'  => __('Help tip', '{domain}'),
+        'monday-first' => true, // Неделя начнется с понедельника; Для воскресенья установлено значение false
+        'min-date' => date('d-m-Y'), // По умолчанию минимальной датой будет текущий день. Установите дату в формате d-m-Y в качестве даты начала
+        'max-date' => null, // По умолчанию максимальная дата не указана. Установите дату в формате d-m-Y в качестве даты начала
+    ),
 );
