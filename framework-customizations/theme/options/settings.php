@@ -665,5 +665,122 @@ $options = array(
          * Also available
          * https://github.com/WordPress/WordPress/blob/4.4.2/wp-includes/class-wp-editor.php#L80-L94
          */
-    )
+    ),
+    'option_multi-picker' => array(
+        'type'  => 'multi-picker',
+        'label' => false,
+        'desc'  => false,
+        'value' => array(
+            /**
+             * '<custom-key>' => 'default-choice'
+             */
+            'gadget' => 'phone',
+
+            /**
+             * These are the choices and their values,
+             * they are available after option was saved to database
+             */
+            'laptop' => array(
+                'price' => '123',
+                'webcam' => false
+            ),
+            'phone' => array(
+                'price' => '456',
+                'memory' => '32'
+            )
+        ),
+        'picker' => array(
+            // '<custom-key>' => option
+            'gadget' => array(
+                'label'   => __('Choose device', '{domain}'),
+                'type'    => 'select', // or 'short-select'
+                'choices' => array(
+                    'phone'  => __('Phone', '{domain}'),
+                    'laptop' => __('Laptop', '{domain}')
+                ),
+                'desc'    => __('Description', '{domain}'),
+                'help'    => __('Help tip', '{domain}'),
+            )
+        ),
+        /*
+        'picker' => array(
+            // '<custom-key>' => option
+            'gadget' => array(
+                'label'   => __('Choose device', '{domain}'),
+                'type'    => 'radio',
+                'choices' => array(
+                    'phone'  => __('Phone', '{domain}'),
+                    'laptop' => __('Laptop', '{domain}')
+                ),
+                'desc'    => __('Description', '{domain}'),
+                'help'    => __('Help tip', '{domain}'),
+            )
+        ),
+        */
+        /*
+        'picker' => array(
+            // '<custom-key>' => option
+            'gadget' => array(
+                'label'   => __('Choose device', '{domain}'),
+                'type'    => 'image-picker',
+                'choices' => array(
+                    'phone'  => 'http://placekitten.com/70/70',
+                    'laptop' => 'http://placekitten.com/71/70'
+                ),
+                'desc'    => __('Description', '{domain}'),
+                'help'    => __('Help tip', '{domain}'),
+            )
+        ),
+        */
+        /*
+        picker => array(
+            // '<custom-key>' => option
+            'gadget' => array(
+                'label' => __('Choose device', '{domain}'),
+                'type'  => 'switch',
+                'right-choice' => array(
+                    'value' => 'laptop',
+                    'label' => __('Laptop', '{domain}')
+                ),
+                'left-choice' => array(
+                    'value' => 'phone',
+                    'label' => __('Phone', '{domain}')
+                ),
+                'desc' => __('Description', '{domain}'),
+                'help' => __('Help tip', '{domain}'),
+            )
+        ),
+        */
+        'choices' => array(
+            'phone' => array(
+                'price' => array(
+                    'type'  => 'text',
+                    'label' => __('Price', '{domain}'),
+                ),
+                'memory' => array(
+                    'type'  => 'select',
+                    'label' => __('Memory', '{domain}'),
+                    'choices' => array(
+                        '16' => __('16Gb', '{domain}'),
+                        '32' => __('32Gb', '{domain}'),
+                        '64' => __('64Gb', '{domain}'),
+                    )
+                )
+            ),
+            'laptop' => array(
+                'price' => array(
+                    'type'  => 'text',
+                    'label' => __('Price', '{domain}'),
+                ),
+                'webcam' => array(
+                    'type'  => 'switch',
+                    'label' => __('Webcam', '{domain}'),
+                )
+            ),
+        ),
+        /**
+         * (optional) if is true, the borders between choice options will be shown
+         */
+        'show_borders' => false,
+    ),
 );
