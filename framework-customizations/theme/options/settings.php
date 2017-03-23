@@ -102,4 +102,36 @@ $options = array(
         // Display choices inline instead of list
         'inline' => false,
     ),
+    'option_single_select' => array(
+        'type'  => 'select',
+        'value' => 'choice-3',
+        'attr'  => array(
+            'class' => 'custom-class',
+            'data-foo' => 'bar'
+        ),
+        'label' => __('Label', MY_THEME_TEXTDOMAIN),
+        'desc'  => __('Description', MY_THEME_TEXTDOMAIN),
+        'help'  => __('Help tip', MY_THEME_TEXTDOMAIN),
+        'choices' => array(
+            '' => '---',
+            'choice-1' => __('Choice 1', MY_THEME_TEXTDOMAIN),
+            'choice-2' => array(
+                'text' => __('Choice 2', MY_THEME_TEXTDOMAIN),
+                'attr' => array('data-foo' => 'bar'),
+            ),
+            array( // optgroup
+                'attr'    => array('label' => __('Group 1', MY_THEME_TEXTDOMAIN)),
+                'choices' => array(
+                    'choice-3' => __('Choice 3', MY_THEME_TEXTDOMAIN),
+                    // ...
+                ),
+            ),
+        ),
+        /**
+         * Разрешить сохранение не существующих вариантов
+         * Полезно, когда вы используете select для его динамического заполнения из js
+         */
+        'no-validate' => false,
+    ),
+
 );
