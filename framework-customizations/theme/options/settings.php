@@ -833,5 +833,13 @@ $options = array(
         'help'  => __('Help tip', '{domain}'),
         'html'  => 'My <b>custom</b> <em>HTML</em>',
 
-    )
+    ),
+    'option_password' => array(
+        'type'  => 'password',
+        'value' => 'default value',
+        'attr'  => array( 'class' => 'custom-class', 'data-foo' => 'bar' ),
+        'label' => __('Label', '{domain}'),
+        'desc'  => __('Description', '{domain}'),
+        'help'  => __('Help tip', '{domain}'),
+    ),
 );
