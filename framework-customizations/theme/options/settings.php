@@ -75,7 +75,7 @@ $options = array(
         'label' => __('Label', MY_THEME_TEXTDOMAIN),
         'desc'  => __('Description', MY_THEME_TEXTDOMAIN),
         'help'  => __('Help tip', MY_THEME_TEXTDOMAIN),
-        'choices' => array( // Note: Avoid bool or int keys http://bit.ly/1cQgVzk
+        'choices' => array( // Примечание: избегайте использования ключей bool или int http://bit.ly/1cQgVzk
             'choice-1' => __('Choice 1', MY_THEME_TEXTDOMAIN),
             'choice-2' => __('Choice 2', MY_THEME_TEXTDOMAIN),
             'choice-3' => __('Choice 3', MY_THEME_TEXTDOMAIN),
@@ -83,5 +83,23 @@ $options = array(
         // Display choices inline instead of list
         'inline' => false,
         //'inline' => true,
+    ),
+    'option_single_radio' => array(
+        'type'  => 'radio',
+        'value' => 'choice-3',
+        'attr'  => array(
+            'class' => 'custom-class',
+            'data-foo' => 'bar'
+        ),
+        'label' => __('Label', MY_THEME_TEXTDOMAIN),
+        'desc'  => __('Description', MY_THEME_TEXTDOMAIN),
+        'help'  => __('Help tip', MY_THEME_TEXTDOMAIN),
+        'choices' => array( // Примечание: избегайте использования ключей bool или int http://bit.ly/1cQgVzk
+            'choice-1' => __('Choice 1', MY_THEME_TEXTDOMAIN),
+            'choice-2' => __('Choice 2', MY_THEME_TEXTDOMAIN),
+            'choice-3' => __('Choice 3', MY_THEME_TEXTDOMAIN),
+        ),
+        // Display choices inline instead of list
+        'inline' => false,
     ),
 );
