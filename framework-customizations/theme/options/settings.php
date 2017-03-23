@@ -883,5 +883,17 @@ $options = array(
         'label' => __('Label', '{domain}'),
         'desc'  => __('Description', '{domain}'),
         'help'  => __('Help tip', '{domain}'),
-    )
+    ),
+    'option_new' => array(
+        'type'  => 'new',
+        'value' => 'csdsvsvd',
+        'label' => __('Option Label', MY_THEME_TEXTDOMAIN),
+        'desc'  => __('Option Description', MY_THEME_TEXTDOMAIN),
+        'text'  => __('Yes', MY_THEME_TEXTDOMAIN),
+        'attr'  => array(
+            'class' => 'custom-class',
+            'data-foo' => 'bar'
+        ),
+        'help'  => __('Some html that will appear in tip popup', MY_THEME_TEXTDOMAIN),
+    ),
 );

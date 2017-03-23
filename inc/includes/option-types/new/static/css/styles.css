@@ -1,0 +1,8 @@
+.fw-option-type-new input {
+    background-color: green;
+    color: white;
+}
+
+.fw-option-type-new button {
+    display: block;
+}
