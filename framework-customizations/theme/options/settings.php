@@ -375,4 +375,74 @@ $options = array(
             'to' => ''
         )
     ),
+    'option_icon-v2' => array(
+        'type'  => 'icon-v2',
+
+        /**
+         * small | medium | large | sauron
+         * Yes, sauron. Definitely try it. Great one.
+         */
+        'preview_size' => 'medium',
+
+        /**
+         * small | medium | large
+         */
+        'modal_size' => 'medium',
+
+        /**
+         * Здесь нет смысла настраивать значение из кода.
+         *
+         * Я задокументирую результат, который вы получите в интерфейсе здесь::
+         * 'value' => array(
+         *   'type' => 'icon-font', // icon-font | custom-upload
+         *
+         *   // ONLY IF icon-font
+         *   'icon-class' => '',
+         *   'icon-class-without-root' => false,
+         *   'pack-name' => false,
+         *   'pack-css-uri' => false
+         *
+         *   // ONLY IF custom-upload
+         *   // 'attachment-id' => false,
+         *   // 'url' => false
+         * ),
+         */
+
+        'attr'  => array( 'class' => 'custom-class', 'data-foo' => 'bar' ),
+        'label' => __('Label', '{domain}'),
+        'desc'  => __('Description', '{domain}'),
+        'help'  => __('Help tip', '{domain}'),
+    ),
+    'option_upload' => array(
+        'type'  => 'upload',
+        'value' => array(
+            /*
+            'attachment_id' => '9',
+            'url' => '//site.com/wp-content/uploads/2014/02/whatever.jpg'
+            */
+            // Если значение установлено в коде, оно не рассматривается и не используется,
+            // поскольку нет смысла устанавливать hardcode attachment_id
+        ),
+        'attr'  => array( 'class' => 'custom-class', 'data-foo' => 'bar' ),
+        'label' => __('Label', '{domain}'),
+        'desc'  => __('Description', '{domain}'),
+        'help'  => __('Help tip', '{domain}'),
+        /**
+         * Если установлено `true`, опция позволит загружать только изображения и отображать thumb выбранного.
+         * Если установлено значение `false`, опция позволит загрузить любой файл из медиа-библиотеки.
+         */
+        'images_only' => true,
+        /**
+         * Массив с разрешенными расширениями файлов, который будет фильтровать медиа-библиотеку и файлы для загрузки
+         */
+        'files_ext' => array( 'doc', 'pdf', 'zip' ),
+        /**
+         * Массив с дополнительными типами mime, который не находится в массиве по умолчанию с mime-типами
+         * из библиотеки Plustload javascript.Формат: массив ('<mime-type>, <ext1> <ext2> <ext2>').
+         * Например: вы устанавливаете фильтр rar для фильтра, но фильтр игнорирует его, чем вы должны установить
+         * Массив со следующим структурным массивом ('.rar, rar'), и это решит проблему.
+         */
+        'extra_mime_types' => array( 'audio/x-aiff, aif aiff' )
+    ),
+
 );
