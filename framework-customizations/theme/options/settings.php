@@ -797,4 +797,26 @@ $options = array(
         'desc'  => __('Description', '{domain}'),
         'help'  => __('Help tip', '{domain}'),
     ),
+    'option_multi' => array(
+        'type'  => 'multi',
+        'value' => array(
+            'option-1' => 'value 1',
+            'option-2' => 'value 2',
+        ),
+        'attr'  => array(
+            'class' => 'custom-class',
+            'data-foo' => 'bar',
+            /*
+            // Add this class to display inner options separators
+            'class' => 'fw-option-type-multi-show-borders',
+            */
+        ),
+        'label' => __('Label', '{domain}'),
+        'desc'  => __('Description', '{domain}'),
+        'help'  => __('Help tip', '{domain}'),
+        'inner-options' => array(
+            'option_1' => array( 'type' => 'text' ),
+            'option_2' => array( 'type' => 'textarea' ),
+        )
+    ),
 );
