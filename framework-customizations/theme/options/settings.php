@@ -819,4 +819,9 @@ $options = array(
             'option_2' => array( 'type' => 'textarea' ),
         )
     ),
+    'option_hidden' => array(
+        'type'  => 'hidden',
+        'value' => 'default value',
+        'attr'  => array( 'class' => 'custom-class', 'data-foo' => 'bar' ),
+    ),
 );
