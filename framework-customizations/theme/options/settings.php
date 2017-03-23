@@ -842,4 +842,20 @@ $options = array(
         'desc'  => __('Description', '{domain}'),
         'help'  => __('Help tip', '{domain}'),
     ),
+    'option_oembed' => array(
+        'type'  => 'oembed',
+        'value' => 'https://vimeo.com/113078377',
+        'label' => __('Label', '{domain}'),
+        'desc'  => __('Description', '{domain}'),
+        'help'  => __('Help tip', '{domain}'),
+        'preview' => array(
+            'width'  => 300, // optional, if you want to set the fixed width to iframe
+            'height' => 300, // optional, if you want to set the fixed height to iframe
+            /**
+             * Если установлено значение false, это заставит соответствовать размерности,
+              * Поскольку некоторые виджеты возвращают iframe с соотношением сторон и игнорируют применяемые измерения
+             */
+            'keep_ratio' => true
+        )
+    ),
 );
