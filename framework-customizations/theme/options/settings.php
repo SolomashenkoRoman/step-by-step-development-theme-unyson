@@ -156,5 +156,54 @@ $options = array(
             ),
         ),
     ),
+    'option_select_multi_select' => array(
+        'type'  => 'multi-select',
+        'value' => array( 'choice-1', 'choice-3' ),
+        'attr'  => array( 'class' => 'custom-class', 'data-foo' => 'bar' ),
+        'label' => __('Label', '{domain}'),
+        'desc'  => __('Description', '{domain}'),
+        'help'  => __('Help tip', '{domain}'),
+        /**
+         * Set population method
+         * Доступны: 'posts', 'taxonomy', 'users', 'array'
+         */
+        'population' => 'array',
+        /**
+         * Установить post types, taxonomies, user roles для поиска
+         *
+         * 'population' => 'posts'
+         * 'source' => 'page',
+         *
+         * 'population' => 'taxonomy'
+         * 'source' => 'category',
+         *
+         * 'population' => 'users'
+         * 'source' => array( 'editor', 'subscriber', 'author' ),
+         *
+         * 'population' => 'array'
+         * 'source' => '' // will populate with 'choices' array
+         */
+        'source' => '',
+        //'population' => 'posts',
+        //'source' => 'post',
 
+        /**
+         * Установите количество posts/users/taxonomies, которые будут выбраны с множественным выбором
+         * Или установите значение false, чтобы отключить эту функцию.
+         */
+        'prepopulate' => 10,
+        /**
+         * Массив с доступными вариантами выбора
+         * Используется только тогда, когда 'population' => 'array'
+         */
+        'choices' => array(
+            'choice-1' => __('Choice 1', '{domain}'),
+            'choice-2' => __('Choice 2', '{domain}'),
+            'choice-3' => __('Choice 3', '{domain}'),
+        ),
+        /**
+         * Установить количество максимальных элементов, которые могут быть выбраны
+         */
+        'limit' => 100,
+    ),
 );
