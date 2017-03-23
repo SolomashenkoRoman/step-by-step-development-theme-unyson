@@ -875,5 +875,13 @@ $options = array(
         'label' => __('Label', '{domain}'),
         'desc'  => __('Description', '{domain}'),
         'help'  => __('Help tip', '{domain}'),
+    ),
+    'option_icon' => array(
+        'type'  => 'icon',
+        'value' => 'fa-smile-o',
+        'attr'  => array( 'class' => 'custom-class', 'data-foo' => 'bar' ),
+        'label' => __('Label', '{domain}'),
+        'desc'  => __('Description', '{domain}'),
+        'help'  => __('Help tip', '{domain}'),
     )
 );
