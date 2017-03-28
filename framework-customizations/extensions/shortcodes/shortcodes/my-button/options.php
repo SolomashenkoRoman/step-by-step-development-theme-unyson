@@ -35,5 +35,7 @@ $options = array(
             'primary'   => __('Primary', '{domain}'),
             'secondary' => __('Secondary', '{domain}')
         )
-    )
+    ),
+    'id'    => array( 'type' => 'unique' ),
+    'color' => array( 'type' => 'color-picker' ),
 );
