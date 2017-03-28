@@ -14,7 +14,7 @@ jQuery(document).ready(function ($) {
         var $options = data.$elements.find(optionTypeClass +':not(.initialized)');
 
         /**
-         * Listen for button click and clear input value
+         * Listen for my-button click and clear input value
          */
         $options.on('click', 'button', function(){
             $(this).closest(optionTypeClass).find('input').val('');

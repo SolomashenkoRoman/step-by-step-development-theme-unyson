@@ -72,7 +72,7 @@ class FW_Option_Type_New extends FW_Option_Type
 
         $html  = '<div '. fw_attr_to_html($wrapper_attr) .'>';
         $html .= '<input '. fw_attr_to_html($option['attr']) .' type="text" />';
-        $html .= '<button type="button" class="button">'. __('Clear text', '{domain}') .'</button>';
+        $html .= '<my-button type="my-button" class="my-button">'. __('Clear text', '{domain}') .'</my-button>';
         $html .= '</div>';
 
         return $html;

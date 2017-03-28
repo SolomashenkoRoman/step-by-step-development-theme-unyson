@@ -520,7 +520,7 @@ $options = array(
         'label' => __('Popup', '{domain}'),
         'desc'  => __('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '{domain}'),
         'popup-title' => __('Popup Title', '{domain}'),
-        'button' => __('Edit', '{domain}'),
+        'my-button' => __('Edit', '{domain}'),
         'popup-title' => null,
         'size' => 'small', // small, medium, large
         'popup-options' => array(
@@ -561,7 +561,7 @@ $options = array(
         'popup-title' => null,
         'size' => 'small', // small, medium, large
         'limit' => 0, // limit the number of popup`s that can be added
-        'add-button-text' => __('Add', '{domain}'),
+        'add-my-button-text' => __('Add', '{domain}'),
         'sortable' => true,
         'popup-options' => array(
             'addable_popup_option_1' => array(
@@ -594,7 +594,7 @@ $options = array(
         'desc'  => __('Description', '{domain}'),
         'help'  => __('Help tip', '{domain}'),
         'option' => array( 'type' => 'text' ),
-        'add-button-text' => __('Add', '{domain}'),
+        'add-my-button-text' => __('Add', '{domain}'),
         'sortable' => true,
     ),
     'option_addable_box' => array(
@@ -615,11 +615,11 @@ $options = array(
             'option_box_2' => array( 'type' => 'textarea' ),
         ),
         'template' => 'Hello {{- option_box_1 }}', // box title
-        'box-controls' => array( // buttons next to (x) remove box button
+        'box-controls' => array( // buttons next to (x) remove box my-button
             'control-id' => '<small class="dashicons dashicons-smiley"></small>',
         ),
         'limit' => 0, // limit the number of boxes that can be added
-        'add-button-text' => __('Add', '{domain}'),
+        'add-my-button-text' => __('Add', '{domain}'),
         'sortable' => true,
     ),
     'option_addable_typography-v2' => array(
