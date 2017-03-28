@@ -5,6 +5,9 @@
  * Date: 28.03.17
  * Time: 9:23 AM
  */
+if (!defined('FW')) {
+    die('Forbidden');
+}
 
 $options = array(
     'demo_text'   => array(

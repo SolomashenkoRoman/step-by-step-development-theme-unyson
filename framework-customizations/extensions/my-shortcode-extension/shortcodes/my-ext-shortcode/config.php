@@ -5,6 +5,9 @@
  * Date: 28.03.17
  * Time: 9:04 AM
  */
+if (!defined('FW')) {
+    die('Forbidden');
+}
 
 $cfg = array(
     'page_builder' => array(

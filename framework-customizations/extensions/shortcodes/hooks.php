@@ -6,7 +6,9 @@
  * Time: 1:02 AM
  */
 
-if (!defined('FW')) die('Forbidden');
+if (!defined('FW')) {
+    die('Forbidden');
+}
 
 function _filter_theme_disable_default_shortcodes($to_disable) {
     $to_disable[] = 'accordion';
