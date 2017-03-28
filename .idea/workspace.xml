@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23d7b53b-7ea4-4bcf-aeb8-adcf46ba574e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/my-shortcode/options.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/my-shortcode/views/view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="step-by-step-development-theme-unyson.iws" />
@@ -60,7 +60,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="options.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="view.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/my-shortcode/views/view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="e#6#99#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="options.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/my-shortcode/options.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
@@ -84,6 +96,7 @@
         <option value="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/my-shortcode/config.php" />
         <option value="$PROJECT_DIR$/framework-customizations/extensions/my-shortcode-extension/shortcodes/my-ext-shortcode/config.php" />
         <option value="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/my-shortcode/options.php" />
+        <option value="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/my-shortcode/views/view.php" />
       </list>
     </option>
   </component>
@@ -228,6 +241,40 @@
               <option name="myItemId" value="extensions" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shortcodes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shortcodes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-shortcode" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="step-by-step-development-theme-unyson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="step-by-step-development-theme-unyson" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework-customizations" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -320,12 +367,12 @@
       <option name="presentableId" value="Default" />
       <updated>1490647017630</updated>
       <workItem from="1490647019705" duration="210000" />
-      <workItem from="1490649418762" duration="3400000" />
+      <workItem from="1490649418762" duration="4187000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3610000" />
+    <option name="totallyTimeSpent" value="4397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1855" y="23" width="1855" height="1057" extended-state="6" />
@@ -386,6 +433,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/my-shortcode/options.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#99#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/framework-customizations/extensions/my-shortcode-extension/shortcodes/my-ext-shortcode/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83">
@@ -396,10 +453,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/my-shortcode/options.php">
+    <entry file="file://$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/my-shortcode/views/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="e#6#99#0#PHP" expanded="true" />
           </folding>
