@@ -99,6 +99,22 @@ class FW_Settings_Form_Test extends FW_Settings_Form
         // enqueue only on settings page
         if ('toplevel_page_'. 'test-fw-settings-form' === $current_screen->base) {
             $this->enqueue_static();
+            wp_enqueue_media();
+            wp_enqueue_script(
+                'test-fw-settings-form', //$handle
+                get_template_directory_uri()  . '/js/scripts.js', //$src
+                array(
+                    'jquery',
+                    //'wp',
+                    'fw',
+
+
+                ),
+                false,
+                false
+
+
+            );
         }
     }
 }

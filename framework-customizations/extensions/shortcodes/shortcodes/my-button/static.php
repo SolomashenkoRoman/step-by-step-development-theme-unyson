@@ -17,6 +17,21 @@ wp_enqueue_style(
     $uri . '/static/css/styles.css'
 );
 
+
+wp_enqueue_script(
+    'fw-shortcode-my-button', //$handle
+    $uri . '/static/js/scripts.js', //$src
+    array(
+        //'fw',
+        'jquery',
+
+    ),
+    false,
+    false
+
+
+);
+
 // file: {theme}/framework-customizations/extensions/shortcodes/shortcodes/{name}/static.php
 
 
