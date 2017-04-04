@@ -180,3 +180,4 @@ require get_template_directory() . '/tgm-plugin-activation/step-by-step-tgm-plug
  * Load hooks.
  */
 require get_template_directory() . '/inc/hooks.php';
+

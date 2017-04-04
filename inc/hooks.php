@@ -48,4 +48,29 @@ if ( defined('FW') ){
         }
     }
 
+    add_action('admin_notices', '_action_admin_notices_fw_flash_message' );
+    function _action_admin_notices_fw_flash_message()
+    {
+        FW_Flash_Messages::add(
+            'test_success',
+            __('Test message', '{domain}'),
+            'success' // available types: info, warning, error, success
+        );
+        FW_Flash_Messages::add(
+            'test_error',
+            __('Test message', '{domain}'),
+            'error' // available types: info, warning, error, success
+        );
+        FW_Flash_Messages::add(
+            'test_warning',
+            __('Test message', '{domain}'),
+            'warning' // available types: info, warning, error, success
+        );
+        FW_Flash_Messages::add(
+            'test_info',
+            __('Test message', '{domain}'),
+            'info' // available types: info, warning, error, success
+        );
+    }
+
 }

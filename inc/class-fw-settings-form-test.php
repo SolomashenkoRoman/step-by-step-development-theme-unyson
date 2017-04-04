@@ -14,10 +14,12 @@ if (!defined('FW')) {
 class FW_Settings_Form_Test extends FW_Settings_Form
 {
     public function get_values() {
+
         return get_option('test_fw_settings_form', array());
     }
 
     public function set_values($values) {
+
         update_option('test_fw_settings_form', $values, false);
     }
 
